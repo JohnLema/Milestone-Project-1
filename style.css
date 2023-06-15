@@ -31,14 +31,17 @@ body{
     position: absolute;
     bottom: 100px;
     left: 1500px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
 }
 @keyframes block{
-    0%{left:100x;}
+    0%{left:10x;}
     100%{left:-1px;}
 }
 @keyframes jump{
     0%{top:150px;}
     30%{top: 100px;}
     70%{top: 100px;}
+}
+.animate {
+    animation: jump 500ms;
 }
