@@ -4,49 +4,47 @@
     user-select: none;
 }
 body{
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-.game{
-    height: 215px;
-    width: 600px;
-    border: 1px solid black ;
-    margin: auto;
-    overflow:hidden;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 #player{
     width: 50px;
     height: 50px;
-    top: 150px;
-    border-radius: 50px;
-    position: relative;
+    bottom: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(100% - 100px);
     background-color: blue;
 }
 .animate{
-    animation: jump 0.3s infinite;
+    animation: jump 500ms;
 }
-@keyframes jump{
+@keyframes jump{ 
     0%{top: 150px;}
-    30%{top:100px;}
-    70%{top:100px};
+    30%{top:100px}
+    70%{top:100px}
     100%{top:150px;}
+}
+#surface{
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    background-color: black;
 }
 #object{
     width: 35px;
     height: 35px;
-    top: 112px;
-    left: 560px;
-    position: relative;
+    bottom: 100px;
+    left:calc(100% - 100px);
+    position: absolute;
     background-color: red;
-    animation: object 1s infinite linear;
+    animation: object 2s infinite linear;
 }
 @keyframes object{
-    0%{left: 500px;}
-    100%{left: -20px;}
+    0%{left: 1000px;}
+    100%{left: -100px;}
 }
 .score{
     font-size: 5vmin;
