@@ -1,9 +1,9 @@
-var character =
-document.getElementById("player");
-
-var block =
-document.getElementById("block");
+const player = getElementById("player");
 
 function jump(){
-    character.classList.add("animate");
+    player.classList.add("jump")
 }
+
+setTimeout(() => {
+    
+}, timeout);
