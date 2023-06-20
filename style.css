@@ -46,7 +46,3 @@ body{
     0%{left: 1000px;}
     100%{left: -100px;}
 }
-.score{
-    font-size: 5vmin;
-    position: absolute;
-}
